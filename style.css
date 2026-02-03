@@ -3,6 +3,59 @@ body {
   font-optical-sizing: auto;
   font-weight: 100 - 1000;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+}
+.main-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1.3fr 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+.sidebar {
+  background-color: red;
+  grid-area: sidebar;
+}
+.nav-gird {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr 4fr;
+  gap: 60px 20px;
+  grid-template-areas:
+    "dash-icon dash-titles"
+    "pages-icons pages-titles"
+    "manage-icons manage-titles";
+}
+header {
+  background-color: orange;
+  grid-area: header;
+}
+main {
+  background-color: blue;
+  grid-area: main;
+}
+.dash-icon {
+  grid-area: dash-icon;
+}
+.dash-titles {
+  grid-area: dash-titles;
+}
+.pages-icons {
+  background-color: brown;
+  grid-area: pages-icons;
+}
+.pages-titles {
+  background-color: blue;
+  grid-area: pages-titles;
+}
+.manage-icons {
+  background-color: rgb(67, 67, 42);
+  grid-area: manage-icons;
+}
+.manage-titles {
+  background-color: peru;
+  grid-area: manage-titles;
 }
