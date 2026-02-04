@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -92,4 +97,13 @@ main {
 }
 .mdi-shield-check{
   margin-top: 15px;
+}
+.topbar {
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.topbar img {
+  width: 40px;
+  height: 40px;
 }
