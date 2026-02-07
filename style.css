@@ -63,26 +63,24 @@ body {
   align-items: center;
   justify-items: start;
 }
-.mdi{
-    justify-self: center;
-    
+.mdi {
+  justify-self: center;
 }
-.item p{
+.item p {
   margin-left: 20px;
 }
-.item i{
+.item i {
   font-size: 18px;
 }
-.manage-item{
+.manage-item {
   grid-template-rows: 40px 40px;
 }
 
 .manage p:last-of-type,
-.manage i:last-of-type{
+.manage i:last-of-type {
   align-self: start;
-  
 }
-.mdi-shield-check{
+.mdi-shield-check {
   margin-top: 15px;
 }
 .topbar {
@@ -104,15 +102,15 @@ body {
   font-size: 25px;
 }
 .topbar .search-area input {
-    background-color: #E2E8F0;
-    border: none;
-    width: 100%;
-    height: 30px;
-    padding: 10px 15px;
-    border-radius: 15px;
+  background-color: #e2e8f0;
+  border: none;
+  width: 100%;
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 15px;
 }
 .topbar .search-area input:focus {
-    outline: none;
+  outline: none;
 }
 .topbar .profile-area {
   display: flex;
@@ -129,9 +127,9 @@ body {
 .topbar .title-area {
   display: grid;
   grid-template-columns: 0.3fr 3fr;
-  grid-template-areas: 
-  "img greeting"
-  "img name";
+  grid-template-areas:
+    "img greeting"
+    "img name";
   justify-items: start;
   align-items: start;
   column-gap: 15px;
@@ -162,13 +160,13 @@ body {
   border-radius: 25px;
 }
 main {
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
   grid-area: main;
   display: grid;
   grid-template-columns: 4fr 1.5fr;
-  grid-template-areas: 
-  "projects announcements"
-  "projects trending";
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
   gap: 20px;
   padding: 20px;
   padding-top: 30px;
@@ -185,18 +183,9 @@ main .trending {
 .raduis {
   border-radius: 7px;
 }
-.content2 {
-    width: 100%;
-  height: 100%;
-  background-color: green;
-}
-.content3 {
-    width: 100%;
-  height: 100%;
-  background-color: black;
-}
+
 .cards-holder {
-  padding-top: 10px ;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -212,7 +201,7 @@ main .trending {
   padding-bottom: 5px;
 }
 .cards-holder .card p {
-  color: #A4A4A4;
+  color: #a4a4a4;
   font-size: 15px;
   max-width: 80%;
 }
@@ -224,4 +213,45 @@ main .trending {
   padding-left: 20px;
   font-size: 20px;
   color: #333333;
+}
+
+.announcements-holder, .card-holder{
+  background-color: white;
+  margin-top: 10px;
+  padding: 30px;
+}
+.announcements-holder h5 {
+  padding-bottom: 4px;
+}
+.announcements-holder p {
+  color: #a4a4a4;
+  font-size: 13px;
+  max-width: 90%;
+}
+.announcements-holder hr {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background-color: #a4a4a4;
+}
+.card-holder{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px 0px;
+}
+.card-holder img{
+  width: 45px;
+  /* justify-self: center; */
+  
+}
+.text-holder{
+  align-self: center;
+}
+.text-holder h5{
+  font-weight: 400px;
+}
+.text-holder p{
+  margin-top: 3px;
+  font-size: 15px;
+  color: #a4a4a4;
 }
