@@ -1,3 +1,252 @@
-h1 {
-    color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 - 1000;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.main-layout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1.3fr 4fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+.sidebar {
+  background-color: #1992d4;
+  grid-area: sidebar;
+  color: white;
+}
+.nav-gird {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr 4fr;
+  gap: 35px 0px;
+  grid-template-areas:
+    "dash-icon dash-titles"
+    "pages pages"
+    "manage manage";
+}
+.dash-icon {
+  grid-area: dash-icon;
+  font-size: 40px;
+  justify-self: start;
+  align-self: center;
+  margin-left: 7px;
+}
+.dash-titles {
+  grid-area: dash-titles;
+  justify-self: start;
+  align-self: center;
+}
+.manage {
+  grid-area: manage;
+}
+.pages {
+  grid-area: pages;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+  justify-items: start;
+}
+.mdi {
+  justify-self: center;
+}
+.item p {
+  margin-left: 20px;
+}
+.item i {
+  font-size: 18px;
+}
+.manage-item {
+  grid-template-rows: 40px 40px;
+}
+
+.manage p:last-of-type,
+.manage i:last-of-type {
+  align-self: start;
+  margin-top: 10px;
+}
+
+.topbar {
+  background-color: white;
+  grid-area: header;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  box-shadow: 0 4px 10px 2px rgb(0 0 0 / 6%);
+  z-index: 10;
+}
+.topbar .search-area {
+  text-align: start;
+  display: flex;
+  justify-items: center;
+}
+.topbar .search-area i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+.topbar .search-area input {
+  background-color: #e2e8f0;
+  border: none;
+  width: 100%;
+  height: 30px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.topbar .search-area input:focus {
+  outline: none;
+}
+.topbar .profile-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.topbar .profile-area i {
+  font-size: 20px;
+}
+.topbar .profile-area img {
+  width: 40px;
+}
+.topbar .title-area {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr;
+  grid-template-areas:
+    "img greeting"
+    "img name";
+  justify-items: start;
+  align-items: start;
+  column-gap: 15px;
+}
+.topbar .title-area img {
+  grid-area: img;
+  width: 70px;
+}
+.topbar .title-area h4 {
+  grid-area: greeting;
+  align-self: center;
+}
+.topbar .title-area h2 {
+  grid-area: name;
+}
+.topbar .buttons-area {
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+.topbar .buttons-area button {
+  color: white;
+  border: none;
+  background-color: #1992d4;
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+main {
+  background-color: #e2e8f0;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 4fr 1.5fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  gap: 20px;
+  padding: 20px;
+  padding-top: 30px;
+}
+main .projects {
+  grid-area: projects;
+}
+main .announcements {
+  grid-area: announcements;
+}
+main .trending {
+  grid-area: trending;
+}
+.raduis {
+  border-radius: 7px;
+}
+
+.cards-holder {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.cards-holder .card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px 20px;
+  border-left: 7px solid #f0b429;
+}
+.cards-holder .card h4 {
+  padding-bottom: 5px;
+}
+.cards-holder .card p {
+  color: #a4a4a4;
+  font-size: 15px;
+  max-width: 80%;
+}
+.cards-holder .card .icons {
+  padding-top: 40px;
+  align-self: flex-end;
+}
+.cards-holder .card .icons i {
+  padding-left: 20px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.announcements-holder,
+.card-holder {
+  background-color: white;
+  margin-top: 10px;
+  padding: 30px;
+}
+.announcements-holder h5 {
+  padding-bottom: 4px;
+}
+.announcements-holder p {
+  color: #a4a4a4;
+  font-size: 13px;
+  max-width: 90%;
+}
+.announcements-holder hr {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background-color: #a4a4a4;
+}
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px 0px;
+}
+.card-holder img {
+  width: 45px;
+}
+.text-holder {
+  align-self: center;
+}
+.text-holder h5 {
+  font-weight: 400px;
+}
+.text-holder p {
+  margin-top: 3px;
+  font-size: 15px;
+  color: #a4a4a4;
 }

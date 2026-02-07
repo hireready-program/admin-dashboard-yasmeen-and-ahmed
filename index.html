@@ -1,12 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"
+    />
     <title>Admin Dashboard</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+  </head>
+  <body>
+    <div class="main-layout">
+      <nav class="sidebar">
+        <div class="nav-gird">
+          <div class="dash-icon">
+            <i class="mdi mdi-view-dashboard"></i>
+          </div>
+          <div class="dash-titles justify">
+            <p>Dashboard</p>
+          </div>
+
+          <div class="pages item">
+            <i class="mdi mdi-home "></i>
+            <p>Home</p>
+            <i class="mdi mdi-card-account-details-outline"></i>
+            <p>Profile</p>
+            <i class="mdi mdi-message"></i>
+            <p>Messages</p>
+
+            <i class="mdi mdi-clock-time-three"></i>
+            <p>History</p>
+
+            <i class="mdi mdi-note-multiple"></i>
+            <p>Tasks</p>
+
+            <i class="mdi mdi-account-group"></i>
+            <p>communities</p>
+          </div>
+          <div class="manage item manage-item">
+            <i class="mdi mdi-cog" style="font-size: 24px"></i>
+            <p>Settings</p>
+            <i class="mdi mdi-help-box" style="font-size: 24px"></i>
+            <p>Support</p>
+            <i class="mdi mdi-shield-check "></i>
+            <p>Privacy</p>
+          </div>
+        </div>
+      </nav>
+      <header class="topbar">
+        <div class="search-area">
+            <i class="mdi mdi-magnify"></i>
+            <input type="text" placeholder="Search..." />
+        </div>
+        <div class="profile-area">
+            <i class="mdi mdi-bell-ring-outline"></i>
+            <img src="./assets/images/author.png" alt="profile-avatar" />
+            <h3>Morgan Oakley</h3>
+        </div>
+        <div class="title-area">
+            <img src="./assets/images/author.png" alt="profile-avatar" />
+            <h4>Hi there,</h4>
+            <h2>Morgan Oakley (@morgan)</h2>
+        </div>
+        <div class="buttons-area">
+            <button class="new">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
+        </div>
+      </header>
+      <main>
+        <div class="projects ">
+          <h3>Your Projects</h4>
+          <div class="cards-holder">
+            <div class="card raduis">
+              <h4>Super Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore! Aspernatur perspiciatis</p>
+              <div class="icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-source-branch"></i>
+              </div>
+            </div>
+            <div class="card raduis">
+              <h4>Less Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore! Aspernatur perspiciatis</p>
+              <div class="icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-source-branch"></i>
+              </div>
+            </div>
+            <div class="card raduis">
+              <h4>Immpossible App</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore! Aspernatur perspiciatis</p>
+              <div class="icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-source-branch"></i>
+              </div>
+            </div>
+            <div class="card raduis">
+              <h4>Easy Peasy App</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore! Aspernatur perspiciatis</p>
+              <div class="icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-source-branch"></i>
+              </div>
+            </div>
+            <div class="card raduis">
+              <h4>Super Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore! Aspernatur perspiciatis</p>
+              <div class="icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-source-branch"></i>
+              </div>
+            </div>
+            <div class="card raduis">
+              <h4>Super Cool Project</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dolore! Aspernatur perspiciatis</p>
+              <div class="icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-source-branch"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="announcements ">
+          <h3>Announcements</h3>
+          <div class=" announcements-holder raduis">
+            <h5>Site Maintainance</h5>
+            <p>Lorem omnis nemo  omnis nemo amet in perferendis!Lorem omnis nemo amet in perferendis!</p>
+            <hr>
+            <h5>Site Maintainance</h5>
+            <p>Lorem omnis nemo  omnis nemo amet in perferendis!Lorem omnis nemo amet in perferendis!</p>
+            <hr>
+            <h5>Site Maintainance</h5>
+            <p>Lorem omnis nemo  omnis nemo amet in perferendis!Lorem omnis nemo amet in perferendis!</p>
+          </div>
+        </div>
+        <div class="trending ">
+          <h3>Trending</h3>
+          <div class="card-holder raduis">
+            <img src="./assets/images/author.png" alt="profile-avatar" />
+            <div class="text-holder">
+              <h5>@tegan</h5>
+              <p>Super Cool Project</p>
+            </div>
+             <img src="./assets/images/author.png" alt="profile-avatar" />
+            <div class="text-holder">
+              <h5>@tegan</h5>
+              <p>Super Cool Project</p>
+            </div>
+             <img src="./assets/images/author.png" alt="profile-avatar" />
+            <div class="text-holder">
+              <h5>@tegan</h5>
+              <p>Super Cool Project</p>
+            </div>
+             <img src="./assets/images/author.png" alt="profile-avatar" />
+            <div class="text-holder">
+              <h5>@tegan</h5>
+              <p>Super Cool Project</p>
+            </div>
+        </div>
+        
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
