@@ -34,9 +34,6 @@ body {
     "dash-icon dash-titles"
     "pages pages"
     "manage manage";
-
-  /* justify-items: center; */
-  /* align-items: center; */
 }
 .dash-icon {
   grid-area: dash-icon;
@@ -79,10 +76,9 @@ body {
 .manage p:last-of-type,
 .manage i:last-of-type {
   align-self: start;
+  margin-top: 10px;
 }
-.mdi-shield-check {
-  margin-top: 15px;
-}
+
 .topbar {
   background-color: white;
   grid-area: header;
@@ -215,7 +211,8 @@ main .trending {
   color: #333333;
 }
 
-.announcements-holder, .card-holder{
+.announcements-holder,
+.card-holder {
   background-color: white;
   margin-top: 10px;
   padding: 30px;
@@ -234,23 +231,21 @@ main .trending {
   height: 1px;
   background-color: #a4a4a4;
 }
-.card-holder{
+.card-holder {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 15px 0px;
 }
-.card-holder img{
+.card-holder img {
   width: 45px;
-  /* justify-self: center; */
-  
 }
-.text-holder{
+.text-holder {
   align-self: center;
 }
-.text-holder h5{
+.text-holder h5 {
   font-weight: 400px;
 }
-.text-holder p{
+.text-holder p {
   margin-top: 3px;
   font-size: 15px;
   color: #a4a4a4;
